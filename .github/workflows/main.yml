@@ -18,7 +18,7 @@ jobs:
         run: docker login --username ${{secrets.DOCKER_USER}} --password ${{secrets.DOCKER_PASS}}
       
       - name: "build image in docker"
-        run: docker build -t mostafamansour72/mygitImage .
+        run: docker build -t ${{secrets.DOCKER_USER}}/mygitimage .
 
       - name: "push to docker hub"
-        run: docker push mostafamansour72/mygitImage
+        run: docker push ${{secrets.DOCKER_USER}}/mygitImage
