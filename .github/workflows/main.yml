@@ -15,4 +15,4 @@ job:
       - uses: actions/checkout@v3
 
       - name: "login to decker"
-      run: docker login --username ${{secrets.DOCKER_USER}} --password ${{secrets.DOCKER_PASS}}
+        run: docker login --username ${{secrets.DOCKER_USER}} --password ${{secrets.DOCKER_PASS}}
