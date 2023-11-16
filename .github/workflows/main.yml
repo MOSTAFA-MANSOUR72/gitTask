@@ -21,4 +21,4 @@ jobs:
         run: docker build -t ${{secrets.DOCKER_USER}}/mygitimage .
 
       - name: "push to docker hub"
-        run: docker push ${{secrets.DOCKER_USER}}/mygitImage
+        run: docker push ${{secrets.DOCKER_USER}}/mygitimage
